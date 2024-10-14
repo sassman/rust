@@ -3049,6 +3049,8 @@ declare_lint! {
     /// ### Example
     ///
     /// ```rust,compile_fail
+    /// #![deny(mixed_export_name_and_no_mangle)]
+    ///
     /// #[no_mangle]
     /// #[export_name = "foo"]
     /// pub fn bar() {}
